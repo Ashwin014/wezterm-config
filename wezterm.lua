@@ -1,5 +1,6 @@
 local wezterm = require("wezterm")
 local config = {}
+local config_dir = wezterm.config_dir
 
 -- Use the config builder object if using a newer version
 if wezterm.config_builder then
@@ -32,10 +33,10 @@ config.window_padding = {
 }
 
 -- TEMP
--- config.window_background_image = "C:\\Users\\ashwi\\Pictures\\wallpaperflare.com_wallpaper (5).jpg"
--- config.window_background_image = "C:\\Users\\ashwi\\Pictures\\carley-matt-XN4rKm6pUaY-unsplash.jpg"
--- config.window_background_image = "C:\\Users\\ashwi\\Pictures\\dark-love-wallpapers-6.jpg"
-config.window_background_image = "C:\\Users\\ashwi\\Pictures\\zetong-li-aCusqffy5sY-unsplash-blurred.jpg"
+-- config.window_background_image = config_dir .. "/assets/wallpaperflare.com_wallpaper (5).jpg"
+-- config.window_background_image = config_dir .. "/assets/carley-matt-XN4rKm6pUaY-unsplash.jpg"
+-- config.window_background_image = config_dir .. "/assets/dark-love-wallpapers-6.jpg"
+config.window_background_image = config_dir .. "/assets/zetong-li-aCusqffy5sy-unsplash-blurred.jpg"
 config.window_background_image_hsb = {
 	brightness = 0.3,
 	hue = 1.0,
