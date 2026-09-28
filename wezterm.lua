@@ -15,22 +15,24 @@ config.colors = {
 
 -- Appearance & Theme
 -- config.color_scheme = "Catppuccin Frappé"
--- config.font = wezterm.font("JetBrains Mono")
+config.font = wezterm.font("JetBrains Mono")
 -- config.font = wezterm.font("Fira Code")
-config.font = wezterm.font("Annotation Mono")
-config.font_size = 10.0
-config.line_height = 1.2
+-- config.font = wezterm.font("Annotation Mono")
+config.font_size = 11.0
+config.line_height = 0.93
+config.cell_width = 0.9
 
 -- Window styling
+config.adjust_window_size_when_changing_font_size = false
 config.window_background_opacity = 1.0
 config.window_decorations = "RESIZE" -- Minimalist border style
 config.hide_tab_bar_if_only_one_tab = true
-config.window_padding = {
-	left = 0,
-	right = 0,
-	top = 0,
-	bottom = 0,
-}
+-- config.window_padding = {
+-- 	left = 0,
+-- 	right = 0,
+-- 	top = 0,
+-- 	bottom = 0,
+-- }
 
 -- TEMP
 -- config.window_background_image = config_dir .. "/assets/wallpaperflare.com_wallpaper (5).jpg"
@@ -66,18 +68,9 @@ config.front_end = "WebGpu" -- Faster GPU rendering
 config.max_fps = 120
 config.prefer_egl = true
 
---------------
+-- ==========================================================================================================
 -- Keybindings
---------------
-
--- Remove confimation when closing
-config.keys = {
-	{
-		key = "w",
-		mods = "CMD",
-		action = wezterm.action.CloseCurrentPane({ confirm = false }),
-	},
-}
+-- ==========================================================================================================
 
 -- Pane splits
 config.keys = config.keys or {}
@@ -95,7 +88,7 @@ table.insert(config.keys, { key = "h", mods = "CTRL|ALT", action = act.ActivateP
 table.insert(config.keys, { key = "j", mods = "CTRL|ALT", action = act.ActivatePaneDirection("Down") })
 table.insert(config.keys, { key = "k", mods = "CTRL|ALT", action = act.ActivatePaneDirection("Up") })
 table.insert(config.keys, { key = "l", mods = "CTRL|ALT", action = act.ActivatePaneDirection("Right") })
-table.insert(config.keys, { key = "w", mods = "CTRL|SHIFT", action = act.CloseCurrentPane({ confirm = true }) })
+table.insert(config.keys, { key = "w", mods = "CTRL|SHIFT", action = act.CloseCurrentPane({ confirm = false }) }) -- close current pane
 
 -- Tab switching
 table.insert(config.keys, { key = "t", mods = "CTRL|SHIFT", action = act.SpawnTab("CurrentPaneDomain") })
