@@ -57,6 +57,9 @@ local onedark_zed = {
 	none = "NONE",
 }
 
+local onedark_zed_fg = onedark_zed.white
+local onedark_zed_bg = onedark_zed.black
+
 -- colors
 config.colors = {
 	cursor_bg = "white",
@@ -78,13 +81,13 @@ config.colors = {
 	-- 	new_tab_hover = { bg_color = ember.base4, fg_color = ember.base8 },
 	-- },
 
-	foreground = ember.fg,
-	background = ember.bg,
-	selection_fg = ember.fg_alt,
-	selection_bg = ember.base4,
-	split = ember.base2,
+	foreground = onedark_zed_fg,
+	background = onedark_zed_bg,
+	selection_fg = onedark_zed_fg,
+	selection_bg = onedark_zed.selection,
+	split = onedark_zed.light_gray,
 	tab_bar = {
-		background = ember.bg,
+		background = onedark_zed_bg,
 		active_tab = { bg_color = ember.bg, fg_color = ember.accents_dark.coral },
 		inactive_tab = { bg_color = ember.base0, fg_color = ember.base7 },
 		inactive_tab_hover = { bg_color = ember.base4, fg_color = ember.base8 },
