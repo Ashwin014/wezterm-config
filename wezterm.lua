@@ -9,20 +9,6 @@ end
 
 -- ember color palette
 -- sourced from https://github.com/ember-theme/nvim/blob/main/lua/ember/palette.lua
--- local ember_bg = "#1c1b19" -- H45  S6%  L10%
--- local ember_bg_alt = "#242320" -- H30  S4%  L13% — Emacs hl-line value
--- local ember_base0 = "#151412" -- H40  S8%  L7%
--- local ember_base1 = "#1c1b19" -- H45  S6%  L10%
--- local ember_base2 = "#252422" -- H40  S5%  L14%
--- local ember_base3 = "#2e2d2a" -- H42  S5%  L17%
--- local ember_base4 = "#3e3c38" -- H42  S5%  L23%
--- local ember_base5 = "#585550" -- H40  S5%  L33%
--- local ember_base6 = "#706c61" -- H43  S8%  L41%
--- local ember_base7 = "#908a7e" -- H42  S8%  L53%
--- local ember_base8 = "#b8b0a0" -- H40  S12% L68%
--- local ember_fg = "#d8d0c0" -- H42  S16% L82%
--- local ember_fg_alt = "#b0a898" -- H38  S12% L64%
-
 local ember = {
 	bg = "#1c1b19", -- H45  S6%  L10%
 	bg_alt = "#242320", -- H30  S4%  L13% — Emacs hl-line value
@@ -37,6 +23,17 @@ local ember = {
 	base8 = "#b8b0a0", -- H40  S12% L68%
 	fg = "#d8d0c0", -- H42  S16% L82%
 	fg_alt = "#b0a898", -- H38  S12% L64%
+
+	accents_dark = {
+		coral = "#e08060", -- H18  S55% L63%  — hero
+		orange = "#c09058", -- H30  S42% L55%
+		gold = "#c8b468", -- H45  S42% L60%
+		olive = "#8a9868", -- H78  S22% L50%
+		sage = "#80a090", -- H150 S14% L56%
+		steel = "#7890a0", -- H205 S18% L55%
+		rose = "#b07878", -- H0   S25% L58%
+		mauve = "#988090", -- H315 S12% L55%
+	},
 }
 
 -- colors
@@ -50,14 +47,14 @@ config.colors = {
 	background = ember.bg,
 	selection_fg = ember.fg_alt,
 	selection_bg = ember.base4,
-	split = "#1e1d1b",
+	split = ember.base2,
 	tab_bar = {
 		background = ember.bg,
-		active_tab = { bg_color = ember.bg, fg_color = "#e08060" },
-		inactive_tab = { bg_color = "#151412", fg_color = "#aea697" },
-		inactive_tab_hover = { bg_color = "#44423d", fg_color = "#ece3d2" },
-		new_tab = { bg_color = "#151412", fg_color = "#aea697" },
-		new_tab_hover = { bg_color = "#44423d", fg_color = "#ece3d2" },
+		active_tab = { bg_color = ember.bg, fg_color = ember.accents_dark.coral },
+		inactive_tab = { bg_color = ember.base0, fg_color = "#aea697" },
+		inactive_tab_hover = { bg_color = "#44423d", fg_color = ember.base7 },
+		new_tab = { bg_color = ember.base0, fg_color = "#aea697" },
+		new_tab_hover = { bg_color = "#44423d", fg_color = ember.base7 },
 	},
 
 	-- -- tab colors based on onedark-zed theme
