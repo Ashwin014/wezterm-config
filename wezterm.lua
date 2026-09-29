@@ -36,6 +36,8 @@ local ember = {
 	},
 }
 
+local onedark_zed = {}
+
 -- colors
 config.colors = {
 	cursor_bg = "white",
@@ -43,6 +45,20 @@ config.colors = {
 	-- background = "#282c33", -- onedark-zed
 
 	-- colors based on ember theme
+	-- foreground = ember.fg,
+	-- background = ember.bg,
+	-- selection_fg = ember.fg_alt,
+	-- selection_bg = ember.base4,
+	-- split = ember.base2,
+	-- tab_bar = {
+	-- 	background = ember.bg,
+	-- 	active_tab = { bg_color = ember.bg, fg_color = ember.accents_dark.coral },
+	-- 	inactive_tab = { bg_color = ember.base0, fg_color = ember.base7 },
+	-- 	inactive_tab_hover = { bg_color = ember.base4, fg_color = ember.base8 },
+	-- 	new_tab = { bg_color = ember.base0, fg_color = ember.base7 },
+	-- 	new_tab_hover = { bg_color = ember.base4, fg_color = ember.base8 },
+	-- },
+
 	foreground = ember.fg,
 	background = ember.bg,
 	selection_fg = ember.fg_alt,
@@ -51,10 +67,10 @@ config.colors = {
 	tab_bar = {
 		background = ember.bg,
 		active_tab = { bg_color = ember.bg, fg_color = ember.accents_dark.coral },
-		inactive_tab = { bg_color = ember.base0, fg_color = "#aea697" },
-		inactive_tab_hover = { bg_color = "#44423d", fg_color = ember.base7 },
-		new_tab = { bg_color = ember.base0, fg_color = "#aea697" },
-		new_tab_hover = { bg_color = "#44423d", fg_color = ember.base7 },
+		inactive_tab = { bg_color = ember.base0, fg_color = ember.base7 },
+		inactive_tab_hover = { bg_color = ember.base4, fg_color = ember.base8 },
+		new_tab = { bg_color = ember.base0, fg_color = ember.base7 },
+		new_tab_hover = { bg_color = ember.base4, fg_color = ember.base8 },
 	},
 
 	-- -- tab colors based on onedark-zed theme
