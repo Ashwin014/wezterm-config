@@ -11,7 +11,8 @@ end
 config.colors = {
 	cursor_bg = "white",
 	cursor_border = "white",
-	background = "#282c33",
+	-- background = "#282c33", -- onedark-zed
+	background = "#1c1b19", -- onedark-zed
 }
 
 -- Appearance & Theme
@@ -19,7 +20,7 @@ config.colors = {
 config.font = wezterm.font("JetBrains Mono")
 -- config.font = wezterm.font("Fira Code")
 -- config.font = wezterm.font("Annotation Mono")
-config.font_size = 11.0
+config.font_size = 12.0
 -- config.line_height = 0.93
 -- config.cell_width = 0.9
 --
