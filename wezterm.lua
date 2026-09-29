@@ -11,28 +11,28 @@ end
 config.colors = {
 	cursor_bg = "white",
 	cursor_border = "white",
-	background = "#282c33", -- onedark-zed
-	-- background = "#1c1b19", -- ember
+	-- background = "#282c33", -- onedark-zed
+	background = "#1c1b19", -- ember
 
 	-- tab colors based on ember theme
-	-- tab_bar = {
-	-- 	background = "#1c1b19",
-	-- 	active_tab = { bg_color = "#1c1b19", fg_color = "#e08060" },
-	-- 	inactive_tab = { bg_color = "#151412", fg_color = "#aea697" },
-	-- 	inactive_tab_hover = { bg_color = "#44423d", fg_color = "#ece3d2" },
-	-- 	new_tab = { bg_color = "#151412", fg_color = "#aea697" },
-	-- 	new_tab_hover = { bg_color = "#44423d", fg_color = "#ece3d2" },
-	-- },
-
-	-- tab colors based on onedark-zed theme
 	tab_bar = {
-		background = "#282c33",
-		active_tab = { bg_color = "#5a6f89", fg_color = "#d7dbe4" },
-		inactive_tab = { bg_color = "#2f343e", fg_color = "#585e6a" },
-		inactive_tab_hover = { bg_color = "#c2c7cf", fg_color = "#d7dbe4" },
-		new_tab = { bg_color = "#2f343e", fg_color = "#585e6a" },
-		new_tab_hover = { bg_color = "#c2c7cf", fg_color = "#d7dbe4" },
+		background = "#1c1b19",
+		active_tab = { bg_color = "#1c1b19", fg_color = "#e08060" },
+		inactive_tab = { bg_color = "#151412", fg_color = "#aea697" },
+		inactive_tab_hover = { bg_color = "#44423d", fg_color = "#ece3d2" },
+		new_tab = { bg_color = "#151412", fg_color = "#aea697" },
+		new_tab_hover = { bg_color = "#44423d", fg_color = "#ece3d2" },
 	},
+
+	-- -- tab colors based on onedark-zed theme
+	-- tab_bar = {
+	-- 	background = "#282c33",
+	-- 	active_tab = { bg_color = "#5a6f89", fg_color = "#d7dbe4" },
+	-- 	inactive_tab = { bg_color = "#2f343e", fg_color = "#585e6a" },
+	-- 	inactive_tab_hover = { bg_color = "#c2c7cf", fg_color = "#d7dbe4" },
+	-- 	new_tab = { bg_color = "#2f343e", fg_color = "#585e6a" },
+	-- 	new_tab_hover = { bg_color = "#c2c7cf", fg_color = "#d7dbe4" },
+	-- },
 }
 
 -- Appearance & Theme
