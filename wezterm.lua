@@ -14,6 +14,11 @@ config.colors = {
 	-- background = "#282c33", -- onedark-zed
 	background = "#1c1b19", -- ember
 	-- background = "#1e1e2e", -- Catppuccin
+
+	tab_bar = {
+		background = "#1c1b19",
+		active_tab = { bg_color = "#ff0000" },
+	},
 }
 
 -- Appearance & Theme
