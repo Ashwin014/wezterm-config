@@ -15,6 +15,7 @@ config.colors = {
 
 	-- colors based on ember theme
 	background = "#1c1b19", -- ember
+	selection_fg = "#b0a898",
 	selection_bg = "#3e3c38",
 	split = "#1e1d1b",
 	tab_bar = {
