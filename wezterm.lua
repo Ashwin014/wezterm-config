@@ -12,9 +12,11 @@ config.colors = {
 	cursor_bg = "white",
 	cursor_border = "white",
 	-- background = "#282c33", -- onedark-zed
-	background = "#1c1b19", -- ember
 
-	-- tab colors based on ember theme
+	-- colors based on ember theme
+	background = "#1c1b19", -- ember
+	selection_bg = "#3e3c38",
+	split = "#1e1d1b",
 	tab_bar = {
 		background = "#1c1b19",
 		active_tab = { bg_color = "#1c1b19", fg_color = "#e08060" },
