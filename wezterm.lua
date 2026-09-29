@@ -85,19 +85,18 @@ config.colors = {
 	background = onedark_zed_bg,
 	selection_fg = onedark_zed_fg,
 	selection_bg = onedark_zed.selection,
-	split = onedark_zed.light_gray,
+	split = onedark_zed.faint_gray,
 	tab_bar = {
 		background = onedark_zed_bg,
-		active_tab = { bg_color = ember.bg, fg_color = ember.accents_dark.coral },
+		active_tab = { bg_color = onedark_zed.blue_gray, fg_color = ember.accents_dark.coral },
 		inactive_tab = { bg_color = ember.base0, fg_color = ember.base7 },
-		inactive_tab_hover = { bg_color = ember.base4, fg_color = ember.base8 },
-		new_tab = { bg_color = ember.base0, fg_color = ember.base7 },
+		inactive_tab_hover = { bg_color = onedark_zed_bg, fg_color = ember.base8 },
+		new_tab = { bg_color = onedark_zed_bg, fg_color = ember.base7 },
 		new_tab_hover = { bg_color = ember.base4, fg_color = ember.base8 },
 	},
 
 	-- -- tab colors based on onedark-zed theme
 	-- tab_bar = {
-	-- 	background = "#282c33",
 	-- 	active_tab = { bg_color = "#5a6f89", fg_color = "#d7dbe4" },
 	-- 	inactive_tab = { bg_color = "#2f343e", fg_color = "#585e6a" },
 	-- 	inactive_tab_hover = { bg_color = "#c2c7cf", fg_color = "#d7dbe4" },
