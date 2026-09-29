@@ -11,17 +11,17 @@ end
 config.colors = {
 	cursor_bg = "white",
 	cursor_border = "white",
-	-- background = "#282c33", -- onedark-zed
-	background = "#1c1b19", -- ember
-	-- background = "#1e1e2e", -- Catppuccin
+	background = "#282c33", -- onedark-zed
+	-- background = "#1c1b19", -- ember
 
+	-- tab colors based on ember theme
 	tab_bar = {
 		background = "#1c1b19",
 		active_tab = { bg_color = "#1c1b19", fg_color = "#e08060" },
-		inactive_tab = { bg_color = "#151412", fg_color = "#6c7086" },
-		inactive_tab_hover = { bg_color = "#313244", fg_color = "#cdd6f4" },
-		new_tab = { bg_color = "#151412", fg_color = "#6c7086" },
-		new_tab_hover = { bg_color = "#313244", fg_color = "#cdd6f4" },
+		inactive_tab = { bg_color = "#151412", fg_color = "#aea697" },
+		inactive_tab_hover = { bg_color = "#44423d", fg_color = "#ece3d2" },
+		new_tab = { bg_color = "#151412", fg_color = "#aea697" },
+		new_tab_hover = { bg_color = "#44423d", fg_color = "#ece3d2" },
 	},
 }
 
