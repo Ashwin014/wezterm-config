@@ -14,6 +14,7 @@ config.colors = {
 	-- background = "#282c33", -- onedark-zed
 
 	-- colors based on ember theme
+	foreground = "#d8d0d0",
 	background = "#1c1b19", -- ember
 	selection_fg = "#b0a898",
 	selection_bg = "#3e3c38",
