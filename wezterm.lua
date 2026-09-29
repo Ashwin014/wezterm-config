@@ -64,7 +64,6 @@ local onedark_zed_bg = onedark_zed.black
 config.colors = {
 	cursor_bg = "white",
 	cursor_border = "white",
-	-- background = "#282c33", -- onedark-zed
 
 	-- colors based on ember theme
 	-- foreground = ember.fg,
@@ -83,7 +82,7 @@ config.colors = {
 
 	-- colors based on onedark_zed theme
 	foreground = onedark_zed_fg,
-	background = onedark_zed_bg,
+	bckground = onedark_zed_bg,
 	selection_fg = onedark_zed_fg,
 	selection_bg = onedark_zed.selection,
 	split = onedark_zed.gray,
@@ -98,7 +97,6 @@ config.colors = {
 }
 
 -- Appearance & Theme
--- config.color_scheme = "Catppuccin Frappé"
 config.font = wezterm.font("JetBrains Mono")
 -- config.font = wezterm.font("Fira Code")
 -- config.font = wezterm.font("Annotation Mono")
@@ -112,10 +110,10 @@ config.window_background_opacity = 1.0
 config.window_decorations = "RESIZE" -- Minimalist border style
 config.hide_tab_bar_if_only_one_tab = true
 config.window_padding = {
-	left = 0,
-	right = 0,
-	top = 0,
-	bottom = 0,
+	left = 5,
+	right = 5,
+	top = 5,
+	bottom = 5,
 }
 
 -- TEMP
