@@ -17,7 +17,11 @@ config.colors = {
 
 	tab_bar = {
 		background = "#1c1b19",
-		active_tab = { bg_color = "#ff0000" },
+		active_tab = { bg_color = "#1c1b19", fg_color = "#e08060" },
+		inactive_tab = { bg_color = "#151412", fg_color = "#6c7086" },
+		inactive_tab_hover = { bg_color = "#313244", fg_color = "#cdd6f4" },
+		new_tab = { bg_color = "#151412", fg_color = "#6c7086" },
+		new_tab_hover = { bg_color = "#313244", fg_color = "#cdd6f4" },
 	},
 }
 
