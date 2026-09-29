@@ -98,9 +98,10 @@ config.colors = {
 }
 
 -- Appearance & Theme
-config.font = wezterm.font("JetBrains Mono")
+-- config.font = wezterm.font("JetBrains Mono")
 -- config.font = wezterm.font("Fira Code")
 -- config.font = wezterm.font("Annotation Mono")
+config.font = wezterm.font("Geist Mono")
 config.font_size = 10.0
 -- config.line_height = 0.93
 -- config.cell_width = 0.9
