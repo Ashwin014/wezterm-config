@@ -41,6 +41,8 @@ config.hide_tab_bar_if_only_one_tab = true
 -- config.window_background_image = config_dir .. "/assets/zetong-li-aCusqffy5sy-unsplash-blurred.jpg"
 -- config.window_background_image = config_dir .. "/assets/414958_bg.jpg"
 -- config.window_background_image = config_dir .. "/assets/323439_bg.jpg"
+-- config.window_background_image = config_dir .. "/assets/364153_bg.jpg"
+-- 282c33_bg
 config.window_background_image_hsb = {
 	brightness = 0.3,
 	hue = 1.0,
