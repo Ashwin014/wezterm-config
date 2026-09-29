@@ -9,19 +9,35 @@ end
 
 -- ember color palette
 -- sourced from https://github.com/ember-theme/nvim/blob/main/lua/ember/palette.lua
-local ember_bg = "#1c1b19" -- H45  S6%  L10%
-local ember_bg_alt = "#242320" -- H30  S4%  L13% — Emacs hl-line value
-local ember_base0 = "#151412" -- H40  S8%  L7%
-local ember_base1 = "#1c1b19" -- H45  S6%  L10%
-local ember_base2 = "#252422" -- H40  S5%  L14%
-local ember_base3 = "#2e2d2a" -- H42  S5%  L17%
-local ember_base4 = "#3e3c38" -- H42  S5%  L23%
-local ember_base5 = "#585550" -- H40  S5%  L33%
-local ember_base6 = "#706c61" -- H43  S8%  L41%
-local ember_base7 = "#908a7e" -- H42  S8%  L53%
-local ember_base8 = "#b8b0a0" -- H40  S12% L68%
-local ember_fg = "#d8d0c0" -- H42  S16% L82%
-local ember_fg_alt = "#b0a898" -- H38  S12% L64%
+-- local ember_bg = "#1c1b19" -- H45  S6%  L10%
+-- local ember_bg_alt = "#242320" -- H30  S4%  L13% — Emacs hl-line value
+-- local ember_base0 = "#151412" -- H40  S8%  L7%
+-- local ember_base1 = "#1c1b19" -- H45  S6%  L10%
+-- local ember_base2 = "#252422" -- H40  S5%  L14%
+-- local ember_base3 = "#2e2d2a" -- H42  S5%  L17%
+-- local ember_base4 = "#3e3c38" -- H42  S5%  L23%
+-- local ember_base5 = "#585550" -- H40  S5%  L33%
+-- local ember_base6 = "#706c61" -- H43  S8%  L41%
+-- local ember_base7 = "#908a7e" -- H42  S8%  L53%
+-- local ember_base8 = "#b8b0a0" -- H40  S12% L68%
+-- local ember_fg = "#d8d0c0" -- H42  S16% L82%
+-- local ember_fg_alt = "#b0a898" -- H38  S12% L64%
+
+local ember = {
+	bg = "#1c1b19", -- H45  S6%  L10%
+	bg_alt = "#242320", -- H30  S4%  L13% — Emacs hl-line value
+	base0 = "#151412", -- H40  S8%  L7%
+	base1 = "#1c1b19", -- H45  S6%  L10%
+	base2 = "#252422", -- H40  S5%  L14%
+	base3 = "#2e2d2a", -- H42  S5%  L17%
+	base4 = "#3e3c38", -- H42  S5%  L23%
+	base5 = "#585550", -- H40  S5%  L33%
+	base6 = "#706c61", -- H43  S8%  L41%
+	base7 = "#908a7e", -- H42  S8%  L53%
+	base8 = "#b8b0a0", -- H40  S12% L68%
+	fg = "#d8d0c0", -- H42  S16% L82%
+	fg_alt = "#b0a898", -- H38  S12% L64%
+}
 
 -- colors
 config.colors = {
@@ -30,14 +46,14 @@ config.colors = {
 	-- background = "#282c33", -- onedark-zed
 
 	-- colors based on ember theme
-	foreground = ember_fg,
-	background = ember_bg,
-	selection_fg = "#b0a898",
-	selection_bg = "#3e3c38",
+	foreground = ember.fg,
+	background = ember.bg,
+	selection_fg = ember.fg_alt,
+	selection_bg = ember.base4,
 	split = "#1e1d1b",
 	tab_bar = {
-		background = ember_bg,
-		active_tab = { bg_color = ember_bg, fg_color = "#e08060" },
+		background = ember.bg,
+		active_tab = { bg_color = ember.bg, fg_color = "#e08060" },
 		inactive_tab = { bg_color = "#151412", fg_color = "#aea697" },
 		inactive_tab_hover = { bg_color = "#44423d", fg_color = "#ece3d2" },
 		new_tab = { bg_color = "#151412", fg_color = "#aea697" },
