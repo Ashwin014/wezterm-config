@@ -11,6 +11,7 @@ end
 config.colors = {
 	cursor_bg = "white",
 	cursor_border = "white",
+	background = "#282c33",
 }
 
 -- Appearance & Theme
@@ -19,20 +20,20 @@ config.font = wezterm.font("JetBrains Mono")
 -- config.font = wezterm.font("Fira Code")
 -- config.font = wezterm.font("Annotation Mono")
 config.font_size = 11.0
-config.line_height = 0.93
-config.cell_width = 0.9
-
+-- config.line_height = 0.93
+-- config.cell_width = 0.9
+--
 -- Window styling
 config.adjust_window_size_when_changing_font_size = false
 config.window_background_opacity = 1.0
 config.window_decorations = "RESIZE" -- Minimalist border style
 config.hide_tab_bar_if_only_one_tab = true
--- config.window_padding = {
--- 	left = 0,
--- 	right = 0,
--- 	top = 0,
--- 	bottom = 0,
--- }
+config.window_padding = {
+	left = 0,
+	right = 0,
+	top = 0,
+	bottom = 0,
+}
 
 -- TEMP
 -- config.window_background_image = config_dir .. "/assets/wallpaperflare.com_wallpaper (5).jpg"
@@ -43,11 +44,11 @@ config.hide_tab_bar_if_only_one_tab = true
 -- config.window_background_image = config_dir .. "/assets/323439_bg.jpg"
 -- config.window_background_image = config_dir .. "/assets/364153_bg.jpg"
 -- 282c33_bg
-config.window_background_image_hsb = {
-	brightness = 0.3,
-	hue = 1.0,
-	saturation = 1.0,
-}
+-- config.window_background_image_hsb = {
+-- 	brightness = 0.3,
+-- 	hue = 1.0,
+-- 	saturation = 1.0,
+-- }
 
 config.tab_bar_at_bottom = false
 config.use_fancy_tab_bar = false -- thinner, plain-text bar instead of the fancy retro one
