@@ -176,26 +176,23 @@ table.insert(
 table.insert(config.keys, {
 	key = "m",
 	mods = "CTRL|SHIFT",
-	action = act.MoveTab(),
+	action = wezterm.action_callback(function(_, pane)
+		pane:move_to_new_tab()
+	end),
 })
--- table.insert(config.keys, {
--- 	key = "m",
--- 	mods = "CTRL|SHIFT",
--- 	action = wezterm.action_callback(function(_win, pane)
--- 		pane:move_to_new_tab()
--- 	end),
--- })
--- table.insert(config.keys, {
--- 	key = "M",
--- 	mods = "CTRL|SHIFT|ALT",
--- 	action = wezterm.action_callback(function(_win, pane)
--- 		pane:move_to_new_window()
--- 	end),
--- })
+table.insert(config.keys, {
+	key = "M",
+	mods = "CTRL|SHIFT|ALT",
+	action = wezterm.action_callback(function(_, pane)
+		pane:move_to_new_window()
+	end),
+})
+
 table.insert(config.keys, { key = "h", mods = "CTRL|ALT", action = act.ActivatePaneDirection("Left") })
 table.insert(config.keys, { key = "j", mods = "CTRL|ALT", action = act.ActivatePaneDirection("Down") })
 table.insert(config.keys, { key = "k", mods = "CTRL|ALT", action = act.ActivatePaneDirection("Up") })
 table.insert(config.keys, { key = "l", mods = "CTRL|ALT", action = act.ActivatePaneDirection("Right") })
+
 table.insert(config.keys, { key = "w", mods = "CTRL|SHIFT", action = act.CloseCurrentPane({ confirm = false }) }) -- close current pane
 
 -- Tab switching
