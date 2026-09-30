@@ -148,6 +148,7 @@ config.default_prog = { "pwsh" }
 -- config.default_prog = { 'powershell' }
 
 config.enable_kitty_graphics = true
+config.enable_kitty_keyboard = true
 
 -- Performance
 config.front_end = "WebGpu" -- Faster GPU rendering
