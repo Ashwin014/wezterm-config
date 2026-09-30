@@ -112,8 +112,8 @@ config.window_background_opacity = 1.0
 config.window_decorations = "RESIZE" -- Minimalist border style
 config.hide_tab_bar_if_only_one_tab = true
 config.window_padding = {
-	left = 3,
-	right = 3,
+	left = 0,
+	right = 0,
 	top = 3,
 	bottom = 3,
 }
