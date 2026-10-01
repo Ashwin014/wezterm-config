@@ -27,20 +27,25 @@ local ember = {
 	},
 }
 
-config.colors = {
-
-	-- colors based on ember theme
-	foreground = ember.fg,
-	background = ember.bg,
-	selection_fg = ember.fg_alt,
-	selection_bg = ember.base4,
-	split = ember.base2,
-	tab_bar = {
+-- the shape every palette must return (see colors/init.lua)
+return {
+	colors = {
+		cursor_bg = "white",
+		cursor_border = "white",
+		foreground = ember.fg,
 		background = ember.bg,
-		active_tab = { bg_color = ember.bg, fg_color = ember.accents_dark.coral },
-		inactive_tab = { bg_color = ember.base0, fg_color = ember.base7 },
-		inactive_tab_hover = { bg_color = ember.base4, fg_color = ember.base8 },
-		new_tab = { bg_color = ember.base0, fg_color = ember.base7 },
-		new_tab_hover = { bg_color = ember.base4, fg_color = ember.base8 },
+		selection_fg = ember.fg_alt,
+		selection_bg = ember.base4,
+		split = ember.base2,
+		tab_bar = {
+			background = ember.bg,
+			active_tab = { bg_color = ember.bg, fg_color = ember.accents_dark.coral },
+			inactive_tab = { bg_color = ember.base0, fg_color = ember.base7 },
+			inactive_tab_hover = { bg_color = ember.base4, fg_color = ember.base8 },
+			new_tab = { bg_color = ember.base0, fg_color = ember.base7 },
+			new_tab_hover = { bg_color = ember.base4, fg_color = ember.base8 },
+		},
 	},
+	-- raw palette, in case you want to reference a specific color elsewhere
+	palette = ember,
 }
