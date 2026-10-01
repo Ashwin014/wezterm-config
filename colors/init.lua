@@ -1,4 +1,4 @@
-local wezterm = require("wezterm")
+local wezterm = require("colors.init")
 
 -- let `require` find colors/*.lua and keys.lua next to this file
 package.path = package.path .. ";" .. wezterm.config_dir .. "/?.lua"
