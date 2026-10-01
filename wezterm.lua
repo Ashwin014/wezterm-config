@@ -9,56 +9,56 @@ end
 
 -- ember color palette
 -- sourced from https://github.com/ember-theme/nvim/blob/main/lua/ember/palette.lua
--- local ember = {
--- 	bg = "#1c1b19", -- H45  S6%  L10%
--- 	bg_alt = "#242320", -- H30  S4%  L13% — Emacs hl-line value
--- 	base0 = "#151412", -- H40  S8%  L7%
--- 	base1 = "#1c1b19", -- H45  S6%  L10%
--- 	base2 = "#252422", -- H40  S5%  L14%
--- 	base3 = "#2e2d2a", -- H42  S5%  L17%
--- 	base4 = "#3e3c38", -- H42  S5%  L23%
--- 	base5 = "#585550", -- H40  S5%  L33%
--- 	base6 = "#706c61", -- H43  S8%  L41%
--- 	base7 = "#908a7e", -- H42  S8%  L53%
--- 	base8 = "#b8b0a0", -- H40  S12% L68%
--- 	fg = "#d8d0c0", -- H42  S16% L82%
--- 	fg_alt = "#b0a898", -- H38  S12% L64%
---
--- 	accents_dark = {
--- 		coral = "#e08060", -- H18  S55% L63%  — hero
--- 		orange = "#c09058", -- H30  S42% L55%
--- 		gold = "#c8b468", -- H45  S42% L60%
--- 		olive = "#8a9868", -- H78  S22% L50%
--- 		sage = "#80a090", -- H150 S14% L56%
--- 		steel = "#7890a0", -- H205 S18% L55%
--- 		rose = "#b07878", -- H0   S25% L58%
--- 		mauve = "#988090", -- H315 S12% L55%
--- 	},
--- }
+local ember = {
+	bg = "#1c1b19", -- H45  S6%  L10%
+	bg_alt = "#242320", -- H30  S4%  L13% — Emacs hl-line value
+	base0 = "#151412", -- H40  S8%  L7%
+	base1 = "#1c1b19", -- H45  S6%  L10%
+	base2 = "#252422", -- H40  S5%  L14%
+	base3 = "#2e2d2a", -- H42  S5%  L17%
+	base4 = "#3e3c38", -- H42  S5%  L23%
+	base5 = "#585550", -- H40  S5%  L33%
+	base6 = "#706c61", -- H43  S8%  L41%
+	base7 = "#908a7e", -- H42  S8%  L53%
+	base8 = "#b8b0a0", -- H40  S12% L68%
+	fg = "#d8d0c0", -- H42  S16% L82%
+	fg_alt = "#b0a898", -- H38  S12% L64%
 
--- onedark_zed color palette
-local onedark_zed = {
-	yellow = "#dfc184",
-	orange = "#bf956a",
-	blue = "#73ade9",
-	blue_gray = "#5a6f89",
-	red = "#d07277",
-	purple = "#b477cf",
-	green = "#a1c181",
-	cyan = "#6eb4bf",
-	gray = "#2f343e",
-	light_gray = "#5d636f",
-	faint_gray = "#3b4048",
-	linenr = "#5d636f",
-	white = "#c8ccd4",
-	black = "#282c33",
-	selection = "#293b5b",
-	frameline = "#97202a",
-	none = "NONE",
+	accents_dark = {
+		coral = "#e08060", -- H18  S55% L63%  — hero
+		orange = "#c09058", -- H30  S42% L55%
+		gold = "#c8b468", -- H45  S42% L60%
+		olive = "#8a9868", -- H78  S22% L50%
+		sage = "#80a090", -- H150 S14% L56%
+		steel = "#7890a0", -- H205 S18% L55%
+		rose = "#b07878", -- H0   S25% L58%
+		mauve = "#988090", -- H315 S12% L55%
+	},
 }
 
-local onedark_zed_fg = onedark_zed.white
-local onedark_zed_bg = onedark_zed.black
+-- onedark_zed color palette
+-- local onedark_zed = {
+-- 	yellow = "#dfc184",
+-- 	orange = "#bf956a",
+-- 	blue = "#73ade9",
+-- 	blue_gray = "#5a6f89",
+-- 	red = "#d07277",
+-- 	purple = "#b477cf",
+-- 	green = "#a1c181",
+-- 	cyan = "#6eb4bf",
+-- 	gray = "#2f343e",
+-- 	light_gray = "#5d636f",
+-- 	faint_gray = "#3b4048",
+-- 	linenr = "#5d636f",
+-- 	white = "#c8ccd4",
+-- 	black = "#282c33",
+-- 	selection = "#293b5b",
+-- 	frameline = "#97202a",
+-- 	none = "NONE",
+-- }
+
+-- local onedark_zed_fg = onedark_zed.white
+-- local onedark_zed_bg = onedark_zed.black
 
 -- colors
 config.colors = {
@@ -67,34 +67,34 @@ config.colors = {
 	-- background = "#282c33", -- onedark-zed
 
 	-- colors based on ember theme
-	-- foreground = ember.fg,
-	-- background = ember.bg,
-	-- selection_fg = ember.fg_alt,
-	-- selection_bg = ember.base4,
-	-- split = ember.base2,
-	-- tab_bar = {
-	-- 	background = ember.bg,
-	-- 	active_tab = { bg_color = ember.bg, fg_color = ember.accents_dark.coral },
-	-- 	inactive_tab = { bg_color = ember.base0, fg_color = ember.base7 },
-	-- 	inactive_tab_hover = { bg_color = ember.base4, fg_color = ember.base8 },
-	-- 	new_tab = { bg_color = ember.base0, fg_color = ember.base7 },
-	-- 	new_tab_hover = { bg_color = ember.base4, fg_color = ember.base8 },
-	-- },
+	foreground = ember.fg,
+	background = ember.bg,
+	selection_fg = ember.fg_alt,
+	selection_bg = ember.base4,
+	split = ember.base2,
+	tab_bar = {
+		background = ember.bg,
+		active_tab = { bg_color = ember.bg, fg_color = ember.accents_dark.coral },
+		inactive_tab = { bg_color = ember.base0, fg_color = ember.base7 },
+		inactive_tab_hover = { bg_color = ember.base4, fg_color = ember.base8 },
+		new_tab = { bg_color = ember.base0, fg_color = ember.base7 },
+		new_tab_hover = { bg_color = ember.base4, fg_color = ember.base8 },
+	},
 
 	-- colors based on onedark_zed theme
-	foreground = onedark_zed_fg,
-	background = onedark_zed_bg,
-	selection_fg = onedark_zed_fg,
-	selection_bg = onedark_zed.selection,
-	split = onedark_zed.gray,
-	tab_bar = {
-		background = onedark_zed_bg,
-		active_tab = { bg_color = onedark_zed.blue_gray, fg_color = onedark_zed_fg },
-		inactive_tab = { bg_color = onedark_zed.gray, fg_color = onedark_zed.light_gray },
-		inactive_tab_hover = { bg_color = onedark_zed.gray, fg_color = onedark_zed_fg },
-		new_tab = { bg_color = onedark_zed_bg, fg_color = onedark_zed.gray },
-		new_tab_hover = { bg_color = onedark_zed.gray, fg_color = onedark_zed_fg },
-	},
+	-- foreground = onedark_zed_fg,
+	-- background = onedark_zed_bg,
+	-- selection_fg = onedark_zed_fg,
+	-- selection_bg = onedark_zed.selection,
+	-- split = onedark_zed.gray,
+	-- tab_bar = {
+	-- 	background = onedark_zed_bg,
+	-- 	active_tab = { bg_color = onedark_zed.blue_gray, fg_color = onedark_zed_fg },
+	-- 	inactive_tab = { bg_color = onedark_zed.gray, fg_color = onedark_zed.light_gray },
+	-- 	inactive_tab_hover = { bg_color = onedark_zed.gray, fg_color = onedark_zed_fg },
+	-- 	new_tab = { bg_color = onedark_zed_bg, fg_color = onedark_zed.gray },
+	-- 	new_tab_hover = { bg_color = onedark_zed.gray, fg_color = onedark_zed_fg },
+	-- },
 }
 
 -- Appearance & Theme
