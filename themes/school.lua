@@ -2,7 +2,8 @@
 -- Palette + colors table for the "school" look.
 local module = {}
 
-module.name = "onedark_zed"
+module.name = "school"
+
 local bc = {
 	base00 = "#212121",
 	base01 = "#303030",
@@ -22,15 +23,15 @@ module.palette = {
 	-- purple = "#b477cf",
 	-- green = "#a1c181",
 	-- cyan = "#6eb4bf",
-	gray = "#2f343e",
-	light_gray = "#5d636f",
-	faint_gray = "#3b4048",
-	linenr = "#5d636f",
-	white = "#c8ccd4",
-	black = "#282c33",
-	selection = "#293b5b",
-	frameline = "#97202a",
-	none = "NONE",
+	-- gray = "#2f343e",
+	-- light_gray = "#5d636f",
+	-- faint_gray = "#3b4048",
+	-- linenr = "#5d636f",
+	-- white = "#c8ccd4",
+	-- black = "#282c33",
+	-- selection = "#293b5b",
+	-- frameline = "#97202a",
+	-- none = "NONE",
 
 	bg = bc.base01,
 	bg_alt = bc.base00, -- floats, statusline, cursorline
@@ -57,24 +58,22 @@ module.palette = {
 }
 
 local p = module.palette
-local fg = p.fg
-local bg = p.bg
 
 module.colors = {
 	cursor_bg = "white",
 	cursor_border = "white",
-	foreground = fg,
-	background = bg,
-	selection_fg = fg,
-	selection_bg = p.selection,
-	split = p.gray,
+	foreground = p.fg,
+	background = p.bg,
+	selection_fg = p.fg,
+	selection_bg = p.bg_sel,
+	split = p.border,
 	tab_bar = {
-		background = bg,
-		active_tab = { bg_color = p.blue_gray, fg_color = fg },
-		inactive_tab = { bg_color = p.gray, fg_color = p.light_gray },
-		inactive_tab_hover = { bg_color = p.gray, fg_color = fg },
-		new_tab = { bg_color = bg, fg_color = p.gray },
-		new_tab_hover = { bg_color = p.gray, fg_color = fg },
+		background = p.bg,
+		active_tab = { bg_color = p.blue_gray, fg_color = p.fg },
+		inactive_tab = { bg_color = p.muted, fg_color = p.light_gray },
+		inactive_tab_hover = { bg_color = p.muted, fg_color = p.fg },
+		new_tab = { bg_color = p.bg, fg_color = p.muted },
+		new_tab_hover = { bg_color = p.muted, fg_color = p.fg },
 	},
 }
 
