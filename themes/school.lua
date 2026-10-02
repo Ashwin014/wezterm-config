@@ -69,9 +69,9 @@ module.colors = {
 	split = p.border,
 	tab_bar = {
 		background = p.bg,
-		active_tab = { bg_color = p.blue_gray, fg_color = p.fg },
-		inactive_tab = { bg_color = p.muted, fg_color = p.light_gray },
-		inactive_tab_hover = { bg_color = p.muted, fg_color = p.fg },
+		active_tab = { bg_color = p.bg_alt, fg_color = p.fg },
+		inactive_tab = { bg_color = p.bg_alt, fg_color = p.border },
+		inactive_tab_hover = { bg_color = bp.base02, fg_color = p.fg },
 		new_tab = { bg_color = p.bg, fg_color = p.muted },
 		new_tab_hover = { bg_color = p.muted, fg_color = p.fg },
 	},
