@@ -24,7 +24,9 @@ function module.apply_to_config(config)
 
 	-- Performance
 	config.front_end = "WebGpu" -- Faster GPU rendering
-	config.max_fps = 120
+	-- config.max_fps = 120
+	config.max_fps = 144
+	config.animation_fps = 1
 	config.prefer_egl = true
 end
 
