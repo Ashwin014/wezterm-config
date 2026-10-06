@@ -3,25 +3,13 @@ local module = {}
 
 module.name = "vscode"
 
-local bc = {
-	base00 = "#212121",
-	base01 = "#303030",
-	base02 = "#424242",
-	base03 = "#545454",
-	base04 = "#636363",
-	base05 = "#727272",
-	base06 = "#878787",
-}
-
 module.palette = {
 	bg = "#1f1f1f",
 	bg_alt = "#262626",
 	bg_sel = "#264778",
-	bg_dark = "#222222",
 	fg = "#ffffff",
 	fg_alt = "#d4d4d4",
 	border = "#444444",
-
 	tab_bg = "#2d2d2d",
 }
 
