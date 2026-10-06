@@ -16,20 +16,20 @@ local bc = {
 module.palette = {
 	bg = "#1f1f1f",
 	bg_alt = bc.base00, -- floats, statusline, cursorline
-	bg_sel = bc.base02, -- selection, popup selection, visual
+	bg_sel = "#264778", -- selection, popup selection, visual
 	bg_dark = bc.base01, -- dashboard, dimmer panels
-	fg = bc.base06,
-	fg_alt = bc.base05, -- secondary text, inactive items
+	fg = "#ffffff",
+	fg_alt = "#d4d4d4", -- secondary text, inactive items
 	muted = bc.base03, -- comments, line numbers, delimiters
-	border = bc.base02,
+	border = "#444444",
 
-	red = "#b85860",
-	orange = "#b58559",
-	yellow = "#ccab6e",
-	green = "#83a868",
-	cyan = "#4a9da8",
-	blue = "#589dd6",
-	purple = "#af6ac4",
+	-- red = "#b85860",
+	-- orange = "#b58559",
+	-- yellow = "#ccab6e",
+	-- green = "#83a868",
+	-- cyan = "#4a9da8",
+	-- blue = "#589dd6",
+	-- purple = "#af6ac4",
 }
 
 local p = module.palette
