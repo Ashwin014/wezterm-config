@@ -15,21 +15,13 @@ local bc = {
 
 module.palette = {
 	bg = "#1f1f1f",
-	bg_alt = "#222222", -- floats, statusline, cursorline
+	bg_alt = "#262626", -- floats, statusline, cursorline
 	bg_sel = "#264778", -- selection, popup selection, visual
-	bg_dark = bc.base01, -- dashboard, dimmer panels
+	bg_dark = "#222222", -- dashboard, dimmer panels
 	fg = "#ffffff",
 	fg_alt = "#d4d4d4", -- secondary text, inactive items
 	muted = bc.base03, -- comments, line numbers, delimiters
 	border = "#444444",
-
-	-- red = "#b85860",
-	-- orange = "#b58559",
-	-- yellow = "#ccab6e",
-	-- green = "#83a868",
-	-- cyan = "#4a9da8",
-	-- blue = "#589dd6",
-	-- purple = "#af6ac4",
 }
 
 local p = module.palette
@@ -44,10 +36,10 @@ module.colors = {
 	split = p.border,
 	tab_bar = {
 		background = p.bg,
-		active_tab = { bg_color = bc.base02, fg_color = p.fg },
-		inactive_tab = { bg_color = p.bg_alt, fg_color = p.border },
+		active_tab = { bg_color = p.bg, fg_color = p.fg },
+		inactive_tab = { bg_color = "#2d2d2d", fg_color = p.border },
 		inactive_tab_hover = { bg_color = p.bg, fg_color = p.fg },
-		new_tab = { bg_color = p.bg, fg_color = p.muted },
+		new_tab = { bg_color = "#2d2d2d", fg_color = p.muted },
 		new_tab_hover = { bg_color = p.muted, fg_color = p.fg },
 	},
 }
