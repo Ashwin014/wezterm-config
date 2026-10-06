@@ -15,7 +15,7 @@ local bc = {
 
 module.palette = {
 	bg = "#1f1f1f",
-	bg_alt = bc.base00, -- floats, statusline, cursorline
+	bg_alt = "#222222", -- floats, statusline, cursorline
 	bg_sel = "#264778", -- selection, popup selection, visual
 	bg_dark = bc.base01, -- dashboard, dimmer panels
 	fg = "#ffffff",
