@@ -11,8 +11,8 @@ end
 -- =================================================================================================
 -- Active theme: uncomment exactly one line
 -- =================================================================================================
-local ACTIVE_THEME = "onedark_zed"
--- local ACTIVE_THEME = "ember"
+-- local ACTIVE_THEME = "onedark_zed"
+local ACTIVE_THEME = "ember"
 -- local ACTIVE_THEME = "school"
 -- local ACTIVE_THEME = "vscode"
 
