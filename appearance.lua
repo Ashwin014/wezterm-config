@@ -16,7 +16,7 @@ function module.apply_to_config(config)
 
 	-- Window styling
 	config.adjust_window_size_when_changing_font_size = false
-	config.window_background_opacity = 1.0
+	config.window_background_opacity = 0.93
 	config.window_decorations = "RESIZE" -- Minimalist border style
 	config.hide_tab_bar_if_only_one_tab = true
 	config.window_padding = {
@@ -27,15 +27,12 @@ function module.apply_to_config(config)
 	}
 
 	-- Background image (TEMP)
-	local config_dir = wezterm.config_dir
+	-- local config_dir = wezterm.config_dir
 	-- config.window_background_image = config_dir .. "/assets/wallpaperflare.com_wallpaper (5).jpg"
 	-- config.window_background_image = config_dir .. "/assets/carley-matt-XN4rKm6pUaY-unsplash.jpg"
 	-- config.window_background_image = config_dir .. "/assets/dark-love-wallpapers-6.jpg"
 	-- config.window_background_image = config_dir .. "/assets/zetong-li-aCusqffy5sy-unsplash-blurred.jpg"
 	-- config.window_background_image = config_dir .. "/assets/skelly-love.jpg"
-	-- config.window_background_image = config_dir .. "/assets/wallpaper-gray.jpg"
-	-- config.window_background_image = config_dir .. "/assets/greenboard.jpg"
-	config.window_background_image = config_dir .. "/assets/onedark-zed.jpg"
 	-- config.window_background_image_hsb = {
 	-- 	brightness = 0.9,
 	-- 	hue = 1.0,
