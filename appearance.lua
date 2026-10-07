@@ -36,7 +36,7 @@ function module.apply_to_config(config)
 	-- config.window_background_image = config_dir .. "/assets/wallpaper-gray.jpg"
 	config.window_background_image = config_dir .. "/assets/greenboard.jpg"
 	config.window_background_image_hsb = {
-		brightness = 0.4,
+		brightness = 0.3,
 		hue = 1.0,
 		saturation = 1.0,
 	}
