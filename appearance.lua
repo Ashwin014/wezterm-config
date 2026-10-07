@@ -31,9 +31,11 @@ function module.apply_to_config(config)
 	-- config.window_background_image = config_dir .. "/assets/wallpaperflare.com_wallpaper (5).jpg"
 	-- config.window_background_image = config_dir .. "/assets/carley-matt-XN4rKm6pUaY-unsplash.jpg"
 	-- config.window_background_image = config_dir .. "/assets/dark-love-wallpapers-6.jpg"
-	config.window_background_image = config_dir .. "/assets/zetong-li-aCusqffy5sy-unsplash-blurred.jpg"
+	-- config.window_background_image = config_dir .. "/assets/zetong-li-aCusqffy5sy-unsplash-blurred.jpg"
+	-- config.window_background_image = config_dir .. "/assets/skelly-love.jpg"
+	config.window_background_image = config_dir .. "/assets/wallpaper-gray.jpg"
 	config.window_background_image_hsb = {
-		brightness = 0.1,
+		brightness = 0.3,
 		hue = 1.0,
 		saturation = 1.0,
 	}
