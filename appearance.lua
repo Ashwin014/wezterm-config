@@ -20,8 +20,8 @@ function module.apply_to_config(config)
 	config.window_decorations = "RESIZE" -- Minimalist border style
 	config.hide_tab_bar_if_only_one_tab = true
 	config.window_padding = {
-		left = 0,
-		right = 0,
+		left = 9,
+		right = 9,
 		top = 3,
 		bottom = 3,
 	}
