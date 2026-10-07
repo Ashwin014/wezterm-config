@@ -33,9 +33,10 @@ function module.apply_to_config(config)
 	-- config.window_background_image = config_dir .. "/assets/dark-love-wallpapers-6.jpg"
 	-- config.window_background_image = config_dir .. "/assets/zetong-li-aCusqffy5sy-unsplash-blurred.jpg"
 	-- config.window_background_image = config_dir .. "/assets/skelly-love.jpg"
-	config.window_background_image = config_dir .. "/assets/wallpaper-gray.jpg"
+	-- config.window_background_image = config_dir .. "/assets/wallpaper-gray.jpg"
+	config.window_background_image = config_dir .. "/assets/greenboard.jpg"
 	config.window_background_image_hsb = {
-		brightness = 0.3,
+		brightness = 0.6,
 		hue = 1.0,
 		saturation = 1.0,
 	}
