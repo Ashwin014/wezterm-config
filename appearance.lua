@@ -16,7 +16,7 @@ function module.apply_to_config(config)
 
 	-- Window styling
 	config.adjust_window_size_when_changing_font_size = false
-	config.window_background_opacity = 0.81
+	config.window_background_opacity = 0.78
 	config.window_decorations = "RESIZE"
 	config.hide_tab_bar_if_only_one_tab = true
 	config.window_padding = {
@@ -32,9 +32,8 @@ function module.apply_to_config(config)
 	-- config.window_background_image = config_dir .. "/assets/carley-matt-XN4rKm6pUaY-unsplash.jpg"
 	-- config.window_background_image = config_dir .. "/assets/dark-love-wallpapers-6.jpg"
 	-- config.window_background_image = config_dir .. "/assets/zetong-li-aCusqffy5sy-unsplash-blurred.jpg"
-	-- config.window_background_image = config_dir .. "/assets/skelly-love.jpg"
 	-- config.window_background_image_hsb = {
-	-- 	brightness = 0.9,
+	-- 	brightness = 0.1,
 	-- 	hue = 1.0,
 	-- 	saturation = 1.0,
 	-- }
