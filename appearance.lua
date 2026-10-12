@@ -10,13 +10,13 @@ function module.apply_to_config(config)
 	-- config.font = wezterm.font("Fira Code")
 	-- config.font = wezterm.font("Annotation Mono")
 	-- config.font = wezterm.font("Geist Mono")
-	config.font_size = 9.0
+	config.font_size = 10.0
 	-- config.line_height = 0.93
 	-- config.cell_width = 0.9
 
 	-- Window styling
 	config.adjust_window_size_when_changing_font_size = false
-	config.window_background_opacity = 0.84
+	config.window_background_opacity = 0.81
 	config.window_decorations = "RESIZE"
 	config.hide_tab_bar_if_only_one_tab = true
 	config.window_padding = {
