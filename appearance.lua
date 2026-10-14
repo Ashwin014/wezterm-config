@@ -20,7 +20,7 @@ function module.apply_to_config(config)
 	config.window_decorations = "RESIZE"
 	config.hide_tab_bar_if_only_one_tab = true
 	config.window_padding = {
-		left = 3,
+		left = 6,
 		right = 3,
 		top = 3,
 		bottom = 3,
