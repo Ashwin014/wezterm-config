@@ -20,10 +20,10 @@ function module.apply_to_config(config)
 	config.window_decorations = "RESIZE"
 	config.hide_tab_bar_if_only_one_tab = true
 	config.window_padding = {
-		left = 5,
-		right = 5,
-		top = 5,
-		bottom = 5,
+		left = 3,
+		right = 3,
+		top = 3,
+		bottom = 3,
 	}
 
 	-- Background image (TEMP)
