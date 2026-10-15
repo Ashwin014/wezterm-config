@@ -1,5 +1,5 @@
 -- Theme registry: maps a theme name to its color definition and applies it.
-local wezterm = require("wezterm")
+-- local wezterm = require("wezterm")
 
 local module = {}
 
