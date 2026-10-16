@@ -16,7 +16,7 @@ function module.apply_to_config(config)
 
 	-- Window styling
 	config.adjust_window_size_when_changing_font_size = false
-	config.window_background_opacity = 0.5
+	config.window_background_opacity = 0.7
 	config.window_decorations = "RESIZE"
 	config.hide_tab_bar_if_only_one_tab = true
 	config.window_padding = {
@@ -39,7 +39,7 @@ function module.apply_to_config(config)
 	-- }
 
 	-- Enable Windows backdrop effects (Windows 11)
-	-- config.win32_system_backdrop = "Acrylic" -- Options: 'Acrylic', 'Mica', 'Tabbed'
+	config.win32_system_backdrop = "Acrylic" -- Options: 'Acrylic', 'Mica', 'Tabbed'
 
 	-- Enable macOS native blur
 	-- config.macos_window_background_blur = 20
