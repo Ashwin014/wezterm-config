@@ -10,9 +10,7 @@ function module.apply_to_config(config)
 	-- config.font = wezterm.font("Fira Code")
 	-- config.font = wezterm.font("Annotation Mono")
 	-- config.font = wezterm.font("Geist Mono")
-	config.font_size = 10.0
-	-- config.line_height = 0.93
-	-- config.cell_width = 0.9
+	config.font_size = 12.0
 
 	-- Window styling
 	config.adjust_window_size_when_changing_font_size = false
