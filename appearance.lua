@@ -5,6 +5,8 @@ local wezterm = require("wezterm")
 local module = {}
 
 function module.apply_to_config(config)
+	config.use_fancy_tab_bar = false
+	config.tab_bar_at_bottom = true
 	-- Font
 	config.font = wezterm.font("JetBrains Mono")
 	-- config.font = wezterm.font("Fira Code")
