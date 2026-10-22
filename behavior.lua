@@ -5,7 +5,7 @@ local module = {}
 
 function module.apply_to_config(config)
 	-- Tab bar
-	config.tab_bar_at_bottom = false
+	config.tab_bar_at_bottom = true
 	config.use_fancy_tab_bar = false -- thinner, plain-text bar instead of the fancy retro one
 	config.tab_max_width = 25
 
