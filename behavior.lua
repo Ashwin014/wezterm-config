@@ -1,13 +1,13 @@
 -- Behavior: launch program, tabs, geometry & performance
--- local wezterm = require("wezterm")
+local wezterm = require("wezterm")
 
 local module = {}
 
 function module.apply_to_config(config)
 	-- Tab bar
-	config.tab_bar_at_bottom = true
+	config.tab_bar_at_bottom = false
 	config.use_fancy_tab_bar = false -- thinner, plain-text bar instead of the fancy retro one
-	config.tab_max_width = 25
+	config.tab_max_width = 30
 
 	-- Initial geometry for new windows
 	config.initial_cols = 130
@@ -17,6 +17,21 @@ function module.apply_to_config(config)
 	-- config.default_prog = { "pwsh" }
 	-- Or for Windows PowerShell (5.1) if pwsh isn't installed
 	-- config.default_prog = { "powershell" }
+
+	local function exists(cmd)
+		local ok = wezterm.run_child_process({ "where", cmd })
+		return ok
+	end
+
+	if wezterm.target_triple:find("windows") then
+		if exists("pwsh") then
+			config.default_prog = { "pwsh" }
+		else
+			config.default_prog = { "powershell" }
+		end
+	else
+		config.default_prog = { "bash" }
+	end
 
 	-- Kitty protocols
 	config.enable_kitty_graphics = true
