@@ -25,16 +25,16 @@ function module.apply_to_config(config)
 	}
 
 	-- Background image (TEMP)
-	-- local config_dir = wezterm.config_dir
+	local config_dir = wezterm.config_dir
 	-- config.window_background_image = config_dir .. "/assets/wallpaperflare.com_wallpaper (5).jpg"
 	-- config.window_background_image = config_dir .. "/assets/carley-matt-XN4rKm6pUaY-unsplash.jpg"
 	-- config.window_background_image = config_dir .. "/assets/dark-love-wallpapers-6.jpg"
-	-- config.window_background_image = config_dir .. "/assets/zetong-li-aCusqffy5sy-unsplash-blurred.jpg"
-	-- config.window_background_image_hsb = {
-	-- 	brightness = 0.1,
-	-- 	hue = 1.0,
-	-- 	saturation = 1.0,
-	-- }
+	config.window_background_image = config_dir .. "/assets/zetong-li-aCusqffy5sy-unsplash-blurred.jpg"
+	config.window_background_image_hsb = {
+		brightness = 0.5,
+		hue = 1.0,
+		saturation = 1.0,
+	}
 
 	-- Enable Windows backdrop effects (Windows 11)
 	-- config.win32_system_backdrop = "Acrylic" -- Options: 'Acrylic', 'Mica', 'Tabbed'
