@@ -13,6 +13,7 @@ local THEMES = {
 	onedark_zed = require("themes.onedark_zed"),
 	ember = require("themes.ember"),
 	school = require("themes.school"),
+	everforest_dark = require("themes.everforest_dark"),
 }
 
 --- Return the theme table for `name`, falling back to the default.

@@ -14,7 +14,8 @@ end
 -- local ACTIVE_THEME = "onedark_zed"
 -- local ACTIVE_THEME = "ember"
 -- local ACTIVE_THEME = "school"
-local ACTIVE_THEME = "vscode"
+-- local ACTIVE_THEME = "vscode"
+local ACTIVE_THEME = "everforest_dark"
 
 -- =================================================================================================
 -- Modules (each exports apply_to_config(config))

@@ -1,0 +1,35 @@
+local module = {}
+
+module.name = "everforest_dark"
+
+module.palette = {
+	bg = "#1f1f1f",
+	bg_alt = "#262626",
+	bg_sel = "#264778",
+	fg = "#ffffff",
+	fg_alt = "#d4d4d4",
+	border = "#444444",
+	tab_bg = "#2d2d2d",
+}
+
+local p = module.palette
+
+module.colors = {
+	cursor_bg = "white",
+	cursor_border = "white",
+	foreground = p.fg,
+	background = p.bg,
+	selection_fg = p.fg,
+	selection_bg = p.bg_sel,
+	split = p.border,
+	tab_bar = {
+		background = p.tab_bg,
+		active_tab = { bg_color = p.bg, fg_color = p.fg_alt },
+		inactive_tab = { bg_color = p.tab_bg, fg_color = p.fg_alt },
+		inactive_tab_hover = { bg_color = p.tab_bg, fg_color = p.fg_alt },
+		new_tab = { bg_color = p.tab_bg, fg_color = p.fg_alt },
+		new_tab_hover = { bg_color = p.tab_bg, fg_color = p.fg_alt },
+	},
+}
+
+return module
