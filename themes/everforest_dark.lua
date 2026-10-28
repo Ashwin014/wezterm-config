@@ -9,7 +9,7 @@ module.palette = {
 	fg = "#d3c6aa",
 	-- fg_alt = "#d4d4d4",
 	border = "#444444",
-	-- tab_bg = "#2d2d2d",
+	tab_bg = "#2d353b",
 }
 
 local p = module.palette
@@ -22,14 +22,14 @@ module.colors = {
 	selection_fg = p.fg,
 	selection_bg = p.bg_sel,
 	split = p.border,
-	-- tab_bar = {
-	-- 	background = p.tab_bg,
+	tab_bar = {
+		background = p.tab_bg,
 	-- 	active_tab = { bg_color = p.bg, fg_color = p.fg_alt },
 	-- 	inactive_tab = { bg_color = p.tab_bg, fg_color = p.fg_alt },
 	-- 	inactive_tab_hover = { bg_color = p.tab_bg, fg_color = p.fg_alt },
 	-- 	new_tab = { bg_color = p.tab_bg, fg_color = p.fg_alt },
 	-- 	new_tab_hover = { bg_color = p.tab_bg, fg_color = p.fg_alt },
-	-- },
+	},
 }
 
 return module
