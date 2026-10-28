@@ -15,12 +15,12 @@ module.palette = {
 local p = module.palette
 
 module.colors = {
-	-- cursor_bg = "white",
-	-- cursor_border = "white",
+	cursor_bg = "white",
+	cursor_border = "white",
 	foreground = p.fg,
 	background = p.bg,
-	-- selection_fg = p.fg,
-	-- selection_bg = p.bg_sel,
+	selection_fg = p.fg,
+	selection_bg = p.bg_sel,
 	split = p.border,
 	-- tab_bar = {
 	-- 	background = p.tab_bg,
