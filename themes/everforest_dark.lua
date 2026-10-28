@@ -6,6 +6,11 @@ module.palette = {
 	bg = "#2d353b",
 	bg_alt = "#343f44",
 	bg_sel = "#475258",
+
+	grey0 = "#7a8478"
+	grey1 = "#859289"
+	grey2 = "#9da9a0"
+
 	fg = "#d3c6aa",
 	-- fg_alt = "#d4d4d4",
 	border = "#444444",
