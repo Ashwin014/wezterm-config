@@ -21,7 +21,7 @@ module.colors = {
 	background = p.bg,
 	-- selection_fg = p.fg,
 	-- selection_bg = p.bg_sel,
-	split = p.border,
+	-- split = p.border,
 	-- tab_bar = {
 	-- 	background = p.tab_bg,
 	-- 	active_tab = { bg_color = p.bg, fg_color = p.fg_alt },
