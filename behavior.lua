@@ -13,11 +13,6 @@ function module.apply_to_config(config)
 	config.initial_cols = 130
 	config.initial_rows = 40
 
-	-- Default program: PowerShell 7 (pwsh)
-	-- config.default_prog = { "pwsh" }
-	-- Or for Windows PowerShell (5.1) if pwsh isn't installed
-	-- config.default_prog = { "powershell" }
-
 	local function exists(cmd)
 		local ok = wezterm.run_child_process({ "where", cmd })
 		return ok
