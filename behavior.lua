@@ -13,8 +13,15 @@ function module.apply_to_config(config)
 	config.initial_cols = 130
 	config.initial_rows = 40
 
-	local path_env = (os.getenv("PATH") or ""):lower()
-	local has_pwsh = path_env:find("pwsh", 1, true) ~= nil
+	local has_pwsh = false
+	for dir in (os.getenv("PATH") or ""):gmatch("[^;]+") do
+		local f = io.open(dir .. "\\pwsh.exe", "r")
+		if f then
+			f:close()
+			has_pwsh = true
+			break
+		end
+	end
 
 	if wezterm.target_triple:find("windows") then
 		if has_pwsh then
