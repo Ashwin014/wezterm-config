@@ -13,13 +13,11 @@ function module.apply_to_config(config)
 	config.initial_cols = 130
 	config.initial_rows = 40
 
-	local function exists(cmd)
-		local ok = wezterm.run_child_process({ "where", cmd })
-		return ok
-	end
+	local path_env = (os.getenv("PATH") or ""):lower()
+	local has_pwsh = path_env:find("pwsh", 1, true) ~= nil
 
 	if wezterm.target_triple:find("windows") then
-		if exists("pwsh") then
+		if has_pwsh then
 			config.default_prog = { "pwsh" }
 		else
 			config.default_prog = { "powershell" }
