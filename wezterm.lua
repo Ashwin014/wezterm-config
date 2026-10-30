@@ -23,6 +23,6 @@ local ACTIVE_THEME = "onedark_zed"
 require("appearance").apply_to_config(config)
 require("behavior").apply_to_config(config)
 require("keybindings").apply_to_config(config)
-require("themes.registry").apply_to_config(config, ACTIVE_THEME)
+-- require("themes.registry").apply_to_config(config, ACTIVE_THEME)
 
 return config

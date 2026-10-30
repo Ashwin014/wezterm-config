@@ -12,9 +12,11 @@ function module.apply_to_config(config)
 	config.font = wezterm.font("Kode Mono")
 	config.font_size = 11.0
 
+	config.color_scheme = "Vs Code Light+ (Gogh)"
+
 	-- Window styling
 	config.adjust_window_size_when_changing_font_size = false
-	config.window_background_opacity = 0.97
+	-- config.window_background_opacity = 0.97
 	config.window_decorations = "RESIZE"
 	config.hide_tab_bar_if_only_one_tab = true
 	config.window_padding = {
