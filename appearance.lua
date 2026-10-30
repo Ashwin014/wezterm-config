@@ -11,7 +11,6 @@ function module.apply_to_config(config)
 	-- config.font = wezterm.font("Annotation Mono")
 	config.font = wezterm.font("Kode Mono")
 	config.font_size = 11.0
-	config.cell_width = 1.1
 
 	-- Switch between Vs Code Dark+/Light+ based on the system appearance (dark/light).
 	local function color_scheme_for_appearance(appearance)
