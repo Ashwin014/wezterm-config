@@ -12,7 +12,7 @@ function module.apply_to_config(config)
 	config.font = wezterm.font("Kode Mono")
 	config.font_size = 11.0
 
-	config.color_scheme = "Vs Code Dark+ (Gogh)"
+	config.color_scheme = "Vs Code Light+ (Gogh)"
 
 	-- Window styling
 	config.adjust_window_size_when_changing_font_size = false
