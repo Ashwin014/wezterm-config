@@ -36,6 +36,18 @@ function module.apply_to_config(config)
 		window:set_config_overrides(overrides)
 	end)
 
+	-- Polling fallback: ensure the theme follows the system even if the
+	-- config-reloaded event doesn't fire on every OS appearance change.
+	wezterm.on("update-status", function(window, pane)
+		local appearance = wezterm.gui.get_appearance()
+		local desired = color_scheme_for_appearance(appearance)
+		local overrides = window:get_config_overrides() or {}
+		if overrides.color_scheme ~= desired then
+			overrides.color_scheme = desired
+			window:set_config_overrides(overrides)
+		end
+	end)
+
 	-- Window styling
 	config.adjust_window_size_when_changing_font_size = false
 	-- config.window_background_opacity = 0.97
