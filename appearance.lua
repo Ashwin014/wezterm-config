@@ -53,12 +53,12 @@ function module.apply_to_config(config)
 	-- config.window_background_opacity = 0.97
 	config.window_decorations = "RESIZE"
 	config.hide_tab_bar_if_only_one_tab = true
-	-- config.window_padding = {
-	-- 	left = 15,
-	-- 	right = 15,
-	-- 	top = 15,
-	-- 	bottom = 15,
-	-- }
+	config.window_padding = {
+		left = 0,
+		right = 0,
+		top = 0,
+		bottom = 0,
+	}
 
 	-- Background image (TEMP)
 	-- local config_dir = wezterm.config_dir
