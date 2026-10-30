@@ -12,7 +12,29 @@ function module.apply_to_config(config)
 	config.font = wezterm.font("Kode Mono")
 	config.font_size = 11.0
 
-	config.color_scheme = "Vs Code Light+ (Gogh)"
+	-- Switch between Vs Code Dark+/Light+ based on the system appearance (dark/light).
+	local function color_scheme_for_appearance(appearance)
+		if appearance and appearance:find("Dark") then
+			return "Vs Code Dark+ (Gogh)"
+		end
+		return "Vs Code Light+ (Gogh)"
+	end
+
+	local system_appearance = "Light"
+	if wezterm.gui then
+		local ok, res = pcall(wezterm.gui.get_appearance)
+		if ok and res then
+			system_appearance = res
+		end
+	end
+	config.color_scheme = color_scheme_for_appearance(system_appearance)
+
+	-- Live update when the OS theme changes (or config reloads).
+	wezterm.on("window-config-reloaded", function(window, pane)
+		local overrides = window:get_config_overrides() or {}
+		overrides.color_scheme = color_scheme_for_appearance(wezterm.gui.get_appearance())
+		window:set_config_overrides(overrides)
+	end)
 
 	-- Window styling
 	config.adjust_window_size_when_changing_font_size = false
