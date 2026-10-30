@@ -12,19 +12,19 @@ function module.apply_to_config(config)
 	config.font = wezterm.font("Kode Mono")
 	config.font_size = 11.0
 
-	config.color_scheme = "Vs Code Light+ (Gogh)"
+	config.color_scheme = "Vs Code Dark+ (Gogh)"
 
 	-- Window styling
 	config.adjust_window_size_when_changing_font_size = false
 	-- config.window_background_opacity = 0.97
 	config.window_decorations = "RESIZE"
 	config.hide_tab_bar_if_only_one_tab = true
-	config.window_padding = {
-		left = 15,
-		right = 15,
-		top = 15,
-		bottom = 15,
-	}
+	-- config.window_padding = {
+	-- 	left = 15,
+	-- 	right = 15,
+	-- 	top = 15,
+	-- 	bottom = 15,
+	-- }
 
 	-- Background image (TEMP)
 	-- local config_dir = wezterm.config_dir
