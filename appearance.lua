@@ -6,11 +6,11 @@ local module = {}
 
 function module.apply_to_config(config)
 	-- Font
-	config.font = wezterm.font("JetBrains Mono")
+	-- config.font = wezterm.font("JetBrains Mono")
 	-- config.font = wezterm.font("Fira Code")
 	-- config.font = wezterm.font("Annotation Mono")
-	-- config.font = wezterm.font("Kode Mono")
-	config.font_size = 11.0
+	config.font = wezterm.font("Kode Mono")
+	config.font_size = 12.0
 
 	--#region colorscheme auto-update
 
