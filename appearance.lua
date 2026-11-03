@@ -10,7 +10,7 @@ function module.apply_to_config(config)
 	-- config.font = wezterm.font("Fira Code")
 	-- config.font = wezterm.font("Annotation Mono")
 	-- config.font = wezterm.font("Kode Mono")
-	config.font_size = 9.0
+	config.font_size = 10.0
 
 	--#region colorscheme auto-update
 
