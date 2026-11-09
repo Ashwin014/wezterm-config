@@ -72,6 +72,7 @@ function module.apply_to_config(config)
 	-- config.window_background_image = config_dir .. "/assets/zetong-li-aCusqffy5sy-unsplash-blurred.jpg"
 	-- config.window_background_image = config_dir .. "/assets/plain-bg.jpg"
 	-- config.window_background_image = config_dir .. "/assets/plain-bg-spotlight.jpg"
+	config.window_background_image = config_dir .. "/assets/ember-bg-dark.jpg"
 	config.window_background_image = config_dir .. "/assets/ember-bg-light.jpg"
 	-- config.window_background_image_hsb = {
 	-- 	brightness = 0.24,
