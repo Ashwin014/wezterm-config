@@ -60,8 +60,8 @@ function module.apply_to_config(config)
 	config.window_padding = {
 		left = 6,
 		right = 6,
-		top = 6,
-		bottom = 6,
+		top = 3,
+		bottom = 0,
 	}
 
 	-- Background image (TEMP)
