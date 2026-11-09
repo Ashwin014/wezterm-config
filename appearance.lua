@@ -12,14 +12,38 @@ function module.apply_to_config(config)
 	-- config.font = wezterm.font("Kode Mono")
 	config.font_size = 11.0
 
-	-- Background color: solid color matched to the system appearance.
-	-- Dark uses the ember bg (#1c1b19) so transparent neovim blends seamlessly.
-	-- Light uses a light neutral; adjust to match your light neovim background.
+	-- Background color presets: add the hex colors for the themes you use regularly.
+	-- Each theme has both a dark background and a light background.
+	local background_presets = {
+		ember = {
+			dark = "#1c1b19",
+			light = "#e6dac4",
+		},
+		catppuccin = {
+			dark = "#1e1e2e",
+			light = "#eff1f5",
+		},
+		tokyonight = {
+			dark = "#1a1b26",
+			light = "#f5f5f5",
+		},
+		rose_pine = {
+			dark = "#191714",
+			light = "#faf4ed",
+		},
+	}
+
+	-- Change this to match your current neovim theme (use a key from the table above).
+	-- You can also override without editing this file via env vars:
+	--   WEZTERM_BACKGROUND_PRESET=catppuccin
+	local theme_preset = os.getenv("WEZTERM_BACKGROUND_PRESET") or "ember"
+
 	local function background_color_for_appearance(appearance)
+		local preset = background_presets[theme_preset] or background_presets.ember
 		if appearance and appearance:find("Dark") then
-			return "#1c1b19"
+			return preset.dark
 		end
-		return "#e6dac4"
+		return preset.light
 	end
 
 	local system_appearance = "Light"
