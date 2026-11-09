@@ -12,14 +12,14 @@ function module.apply_to_config(config)
 	-- config.font = wezterm.font("Kode Mono")
 	config.font_size = 11.0
 
-	--#region colorscheme auto-update
-
-	-- Switch between Vs Code Dark+/Light+ based on the system appearance (dark/light).
-	local function color_scheme_for_appearance(appearance)
+	-- Background color: solid color matched to the system appearance.
+	-- Dark uses the ember bg (#1c1b19) so transparent neovim blends seamlessly.
+	-- Light uses a light neutral; adjust to match your light neovim background.
+	local function background_color_for_appearance(appearance)
 		if appearance and appearance:find("Dark") then
-			return "Vs Code Dark+ (Gogh)"
+			return "#1c1b19"
 		end
-		return "Vs Code Light+ (Gogh)"
+		return "#e6dac4"
 	end
 
 	local system_appearance = "Light"
@@ -29,28 +29,28 @@ function module.apply_to_config(config)
 			system_appearance = res
 		end
 	end
-	config.color_scheme = color_scheme_for_appearance(system_appearance)
+	config.colors = config.colors or {}
+	config.colors.background = background_color_for_appearance(system_appearance)
 
-	-- Live update when the OS theme changes (or config reloads).
+	-- Live update the background color when the OS theme changes.
 	wezterm.on("window-config-reloaded", function(window, pane)
 		local overrides = window:get_config_overrides() or {}
-		overrides.color_scheme = color_scheme_for_appearance(wezterm.gui.get_appearance())
+		overrides.colors = overrides.colors or {}
+		overrides.colors.background = background_color_for_appearance(wezterm.gui.get_appearance())
 		window:set_config_overrides(overrides)
 	end)
 
-	-- Polling fallback: ensure the theme follows the system even if the
-	-- config-reloaded event doesn't fire on every OS appearance change.
+	-- Polling fallback: keep the background color in sync with the system theme.
 	wezterm.on("update-status", function(window, pane)
 		local appearance = wezterm.gui.get_appearance()
-		local desired = color_scheme_for_appearance(appearance)
+		local desired = background_color_for_appearance(appearance)
 		local overrides = window:get_config_overrides() or {}
-		if overrides.color_scheme ~= desired then
-			overrides.color_scheme = desired
+		overrides.colors = overrides.colors or {}
+		if overrides.colors.background ~= desired then
+			overrides.colors.background = desired
 			window:set_config_overrides(overrides)
 		end
 	end)
-
-	--#endregion
 
 	-- Window styling
 	config.adjust_window_size_when_changing_font_size = false
@@ -65,15 +65,13 @@ function module.apply_to_config(config)
 	}
 
 	-- Background image (TEMP)
-	local config_dir = wezterm.config_dir
+	-- local config_dir = wezterm.config_dir
 	-- config.window_background_image = config_dir .. "/assets/wallpaperflare.com_wallpaper (5).jpg"
 	-- config.window_background_image = config_dir .. "/assets/carley-matt-XN4rKm6pUaY-unsplash.jpg"
 	-- config.window_background_image = config_dir .. "/assets/dark-love-wallpapers-6.jpg"
 	-- config.window_background_image = config_dir .. "/assets/zetong-li-aCusqffy5sy-unsplash-blurred.jpg"
 	-- config.window_background_image = config_dir .. "/assets/plain-bg.jpg"
 	-- config.window_background_image = config_dir .. "/assets/plain-bg-spotlight.jpg"
-	config.window_background_image = config_dir .. "/assets/ember-bg-dark.jpg"
-	config.window_background_image = config_dir .. "/assets/ember-bg-light.jpg"
 	-- config.window_background_image_hsb = {
 	-- 	brightness = 0.24,
 	-- 	hue = 1.0,
