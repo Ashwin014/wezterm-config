@@ -6,8 +6,8 @@ local module = {}
 
 function module.apply_to_config(config)
 	-- Font
-	config.font = wezterm.font("JetBrains Mono")
-	-- config.font = wezterm.font("Fira Code")
+	-- config.font = wezterm.font("JetBrains Mono")
+	config.font = wezterm.font("Fira Code")
 	-- config.font = wezterm.font("Annotation Mono")
 	-- config.font = wezterm.font("Kode Mono")
 	config.font_size = 11.0
@@ -19,17 +19,9 @@ function module.apply_to_config(config)
 			dark = "#1c1b19",
 			light = "#e6dac4",
 		},
-		catppuccin = {
-			dark = "#1e1e2e",
-			light = "#eff1f5",
-		},
-		tokyonight = {
-			dark = "#1a1b26",
-			light = "#f5f5f5",
-		},
-		rose_pine = {
-			dark = "#191714",
-			light = "#faf4ed",
+		vscode = {
+			dark = "#1f1f1f",
+			light = "#ffffff",
 		},
 	}
 
