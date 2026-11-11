@@ -13,7 +13,7 @@ function module.apply_to_config(config)
 	-- config.font = wezterm.font("0xProto Nerd Font")
 	-- config.font = wezterm.font("Agave Nerd Font")
 	-- config.font = wezterm.font("Lilex Nerd Font")
-	config.font = wezterm.font("Hurmit")
+	config.font = wezterm.font("Hurmit Nerd Font")
 	config.font_size = 11.0
 
 	-- Background color presets: add the hex colors for the themes you use regularly.
