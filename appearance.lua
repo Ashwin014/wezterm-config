@@ -11,8 +11,8 @@ function module.apply_to_config(config)
 	-- config.font = wezterm.font("Annotation Mono")
 	-- config.font = wezterm.font("Kode Mono")
 	-- config.font = wezterm.font("0xProto Nerd Font")
-	config.font = wezterm.font("Agrave")
-	config.font_size = 14.0
+	config.font = wezterm.font("Agave Nerd Font")
+	config.font_size = 12.0
 
 	-- Background color presets: add the hex colors for the themes you use regularly.
 	-- Each theme has both a dark background and a light background.
