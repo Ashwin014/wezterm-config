@@ -18,7 +18,7 @@ function module.apply_to_config(config)
 	-- config.font = wezterm.font("psudoFont Liga Mono")
 	-- config.font = wezterm.font("Fragment Mono")
 	-- config.font = wezterm.font("Twilio Sans Mono")
-	config.font = wezterm.font("Maple Mono")
+	config.font = wezterm.font("Lyth Mono")
 	config.font_size = 11.0
 
 	-- Background color presets: add the hex colors for the themes you use regularly.
