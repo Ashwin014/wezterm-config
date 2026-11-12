@@ -14,9 +14,9 @@ function module.apply_to_config(config)
 	-- config.font = wezterm.font("Lilex Nerd Font")
 	-- config.font = wezterm.font("Hurmit Nerd Font")
 	-- config.font = wezterm.font("VictorMono NF")
-	-- config.font = wezterm.font("psudoFont Liga Mono")
+	config.font = wezterm.font("psudoFont Liga Mono")
 	-- config.font = wezterm.font("Fragment Mono")
-	config.font = wezterm.font("Buena Mono")
+	-- config.font = wezterm.font("Buena Mono")
 	config.font_size = 11.0
 
 	-- Background color presets: add the hex colors for the themes you use regularly.
@@ -43,7 +43,7 @@ function module.apply_to_config(config)
 	-- Change this to match your current neovim theme (use a key from the table above).
 	-- You can also override without editing this file via env vars:
 	--   WEZTERM_BACKGROUND_PRESET=catppuccin
-	local theme_preset = os.getenv("WEZTERM_BACKGROUND_PRESET") or "vscode"
+	local theme_preset = os.getenv("WEZTERM_BACKGROUND_PRESET") or "ember"
 
 	local function background_color_for_appearance(appearance)
 		local preset = background_presets[theme_preset] or background_presets.ember
