@@ -14,10 +14,10 @@ function module.apply_to_config(config)
 	-- config.font = wezterm.font("Lilex Nerd Font")
 	-- config.font = wezterm.font("Hurmit Nerd Font")
 	-- config.font = wezterm.font("VictorMono NF")
-	config.font = wezterm.font("psudoFont Liga Mono")
-	-- config.font = wezterm.font("Fragment Mono")
+	-- config.font = wezterm.font("psudoFont Liga Mono")
+	config.font = wezterm.font("Fragment Mono")
 	-- config.font = wezterm.font("Buena Mono")
-	config.font_size = 11.0
+	config.font_size = 10.0
 
 	-- Background color presets: add the hex colors for the themes you use regularly.
 	-- Each theme has both a dark background and a light background.
