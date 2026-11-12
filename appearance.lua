@@ -35,6 +35,10 @@ function module.apply_to_config(config)
 			dark = "#292727",
 			light = "#ddd0b8",
 		},
+		mellifluous = {
+			dark = "#1a1a1a",
+			light = "#ddd0b8",
+		},
 	}
 
 	-- Change this to match your current neovim theme (use a key from the table above).
@@ -82,7 +86,7 @@ function module.apply_to_config(config)
 
 	-- Window styling
 	config.adjust_window_size_when_changing_font_size = false
-	config.window_background_opacity = 0.99
+	-- config.window_background_opacity = 0.99
 	config.window_decorations = "RESIZE"
 	config.hide_tab_bar_if_only_one_tab = true
 	config.window_padding = {
