@@ -37,14 +37,14 @@ function module.apply_to_config(config)
 		},
 		mellifluous = {
 			dark = "#1a1a1a",
-			light = "#ddd0b8",
+			light = "#e7e7e7",
 		},
 	}
 
 	-- Change this to match your current neovim theme (use a key from the table above).
 	-- You can also override without editing this file via env vars:
 	--   WEZTERM_BACKGROUND_PRESET=catppuccin
-	local theme_preset = os.getenv("WEZTERM_BACKGROUND_PRESET") or "vscode"
+	local theme_preset = os.getenv("WEZTERM_BACKGROUND_PRESET") or "mellifluous"
 
 	local function background_color_for_appearance(appearance)
 		local preset = background_presets[theme_preset] or background_presets.ember
