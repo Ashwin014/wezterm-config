@@ -44,7 +44,7 @@ function module.apply_to_config(config)
 	-- Change this to match your current neovim theme (use a key from the table above).
 	-- You can also override without editing this file via env vars:
 	--   WEZTERM_BACKGROUND_PRESET=catppuccin
-	local theme_preset = os.getenv("WEZTERM_BACKGROUND_PRESET") or "mellifluous"
+	local theme_preset = os.getenv("WEZTERM_BACKGROUND_PRESET") or "vscode"
 
 	local function background_color_for_appearance(appearance)
 		local preset = background_presets[theme_preset] or background_presets.ember
@@ -92,7 +92,7 @@ function module.apply_to_config(config)
 	config.window_padding = {
 		left = 0,
 		right = 0,
-		top = 0,
+		top = 6,
 		bottom = 0,
 	}
 
