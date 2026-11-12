@@ -15,8 +15,8 @@ function module.apply_to_config(config)
 	-- config.font = wezterm.font("Hurmit Nerd Font")
 	-- config.font = wezterm.font("VictorMono NF")
 	-- config.font = wezterm.font("psudoFont Liga Mono")
-	config.font = wezterm.font("Fragment Mono")
-	-- config.font = wezterm.font("Twilio Sans Mono")
+	-- config.font = wezterm.font("Fragment Mono")
+	config.font = wezterm.font("Twilio Sans Mono")
 	-- config.font = wezterm.font("Buena Mono")
 	config.font_size = 11.0
 
