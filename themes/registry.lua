@@ -5,7 +5,7 @@ local module = {}
 
 -- local DEFAULT = "onedark_zed"
 -- local DEFAULT = "school"
-local DEFAULT = "vsode"
+local DEFAULT = "vscode"
 
 -- To add a theme: drop a file in themes/ and register it here.
 local THEMES = {
