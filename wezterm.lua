@@ -14,12 +14,12 @@ end
 -- local ACTIVE_THEME = "onedark_zed"
 -- local ACTIVE_THEME = "ember"
 -- local ACTIVE_THEME = "school"
-local ACTIVE_THEME = "vscode"
+-- local ACTIVE_THEME = "vscode"
 
 -- =========================================================
 -- Modules (each exports apply_to_config(config))
 -- =========================================================
--- require("appearance").apply_to_config(config)
+require("appearance").apply_to_config(config)
 require("behavior").apply_to_config(config)
 require("keybindings").apply_to_config(config)
 -- require("themes.registry").apply_to_config(config, ACTIVE_THEME)
