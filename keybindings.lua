@@ -7,6 +7,9 @@ local module = {}
 function module.apply_to_config(config)
 	config.keys = config.keys or {}
 
+	-- disables
+	table.insert(config.keys, { key = "f", mods = "CTRL|SHIFT", action = wezterm.action.DisableDefaultAssignment })
+
 	-- Pane splits
 	table.insert(
 		config.keys,
