@@ -6,7 +6,7 @@ local module = {}
 
 function module.apply_to_config(config)
 	-- Font
-	config.font = wezterm.font("JetBrains Mono")
+	-- config.font = wezterm.font("JetBrains Mono")
 	-- config.font = wezterm.font("Fira Code")
 	-- config.font = wezterm.font("Annotation Mono")
 	-- config.font = wezterm.font("Kode Mono")
@@ -19,6 +19,8 @@ function module.apply_to_config(config)
 	-- config.font = wezterm.font("Buena Mono")
 	config.font_size = 10.0
 	-- config.line_height = 1.1
+
+	config.font = wezterm.font("JetBrains Mono", { weight = "Thin" })
 
 	-- Background color presets: add the hex colors for the themes you use regularly.
 	-- Each theme has both a dark background and a light background.
