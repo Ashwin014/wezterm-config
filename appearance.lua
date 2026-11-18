@@ -20,7 +20,7 @@ function module.apply_to_config(config)
 	config.font_size = 10.0
 	-- config.line_height = 1.1
 
-	config.font = wezterm.font("JetBrains Mono", { weight = "Thin" })
+	-- config.font = wezterm.font("JetBrains Mono", { weight = "Thin" })
 
 	-- Background color presets: add the hex colors for the themes you use regularly.
 	-- Each theme has both a dark background and a light background.
