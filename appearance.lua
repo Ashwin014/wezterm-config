@@ -91,7 +91,7 @@ function module.apply_to_config(config)
 	config.window_padding = {
 		left = 12,
 		right = 12,
-		top = 18,
+		top = 12,
 		bottom = 12,
 	}
 
