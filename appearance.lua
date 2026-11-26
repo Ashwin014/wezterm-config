@@ -89,10 +89,10 @@ function module.apply_to_config(config)
 	config.window_decorations = "RESIZE"
 	config.hide_tab_bar_if_only_one_tab = true
 	config.window_padding = {
-		left = 0,
-		right = 0,
-		top = 6,
-		bottom = 0,
+		left = 12,
+		right = 12,
+		top = 18,
+		bottom = 12,
 	}
 
 	-- Background image (TEMP)
