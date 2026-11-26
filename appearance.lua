@@ -85,14 +85,14 @@ function module.apply_to_config(config)
 
 	-- Window styling
 	config.adjust_window_size_when_changing_font_size = false
-	config.window_background_opacity = 0.99
+	config.window_background_opacity = 0.98
 	config.window_decorations = "RESIZE"
 	config.hide_tab_bar_if_only_one_tab = true
 	config.window_padding = {
-		left = 12,
-		right = 12,
-		top = 12,
-		bottom = 12,
+		left = 9,
+		right = 9,
+		top = 9,
+		bottom = 9,
 	}
 
 	-- Background image (TEMP)
