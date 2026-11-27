@@ -39,9 +39,10 @@ function module.apply_to_config(config)
 			dark = "#1a1a1a",
 			light = "#e7e7e7",
 		},
+		-- Helix themes
 		onedark = {
 			dark = "#282c34",
-			light = "#e7e7e7",
+			light = "#282c34",
 		},
 	}
 
